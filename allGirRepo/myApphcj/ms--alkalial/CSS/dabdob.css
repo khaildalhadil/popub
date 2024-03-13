@@ -1,0 +1,62 @@
+/* .main--img {
+    position: relative;
+} */
+
+.animal {
+    position: relative;
+    /* background: black;
+    height: 1rem; */
+}
+
+.head {
+    position: absolute;
+    bottom: 5rem;
+    left: 42%;
+    margin: -1rem;
+    padding: 0;
+    width: 8rem;
+    height: 8rem;
+    background: saddlebrown;
+    border-radius: 30% 30% 50% 50%;
+    border: 5px solid #333;
+    z-index: 1;
+}
+
+.hair {
+    position: absolute;
+    bottom: 4rem;
+    left: 38.6%;
+    margin: -1rem;
+    padding: 0;
+    width: 11rem;
+    height: 11rem;
+    background: seagreen;
+    /* background-color: red; */
+    border-radius: 30% 30% 50% 50%;
+    border: 5px solid #333;
+    z-index: -4;
+}
+
+.hair::before {
+    content: '';
+    position: absolute;
+    bottom: 0%;
+    left: 46%;
+    background: #333;
+    /* border-bottom-left-radius: 50%; */
+    width: 10%;
+    height: 8%;
+    /* border-radius: 50%; */
+}
+
+.body {
+    position: absolute;
+    bottom: -1rem;
+    left: 40%;
+    width: 8rem;
+    height: 8rem;
+    background: saddlebrown;
+    border-radius: 50% 50% 30% 30%;
+    border: 5px solid #333;
+    z-index: -5;
+}

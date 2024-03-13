@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    color: #333;
+    font-family: "Truculenta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background: #f2f2f2;
+}
+
+/* #1a1716? */
+
+.bg--color {
+    position: absolute;
+    width: 100vh;
+    height: 100vh;
+}
+
+.main--bg {
+    width: 100%;
+    height: 100%;
+    background: li;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding: 2.5rem 10rem;
+    background: #c5eff6;
+    font-weight: bold ;
+    border-bottom: solid #444 3px;
+    font-family: "Luckiest Guy", cursive;
+    letter-spacing: 1.8px;
+}
+
+.div {
+    width: 4rem;
+    height: .5rem;
+    background: #222;
+    border-radius: 12px;
+    position: relative;
+}
+
+.div::before,
+.div::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #222;
+    border-radius: 12px;
+}
+
+.div::before {
+    top: 150%;
+}
+
+.div::after {
+    top: -170%;
+}
+
+.nav--input {
+    border: none;
+    padding: 1rem 3rem;
+    border-radius: 12px;
+    border: #555 1px solid;
+}
+
+.nav--input {
+    font-family: cursive;
+}
+
+*:focus {
+    outline: none;
+}
+
+.header__nav__ul {
+    display: flex;
+    align-items: center;
+    gap: 4.8rem;
+    font-size: 2rem;
+    list-style: none;
+}
+
+.header__nav__ul__li a:link,
+.header__nav__ul__li a:visited {
+    text-decoration: none;
+    color: #333
+}
+
+/* .header__nav__ul__li a:hover,
+.header__nav__ul__li a:active  */
+
+.logo {
+    height: 15rem;
+    /* width: 2rem;
+    font-size: 2rem; */
+}
+
+/********* main **********/
+
+.main {
+    display: flex;
+    align-items: center;
+    gap: 27rem;
+    max-width: 130rem;
+    margin: 3rem auto;
+    padding: 3rem 4rem;
+}
+
+.main--h1 {
+    font-size: 5.2rem;
+    font-weight: bold;
+}
+
+.main--p {
+    margin-top: 1.6rem;
+    font-size: 3rem;
+}
+
+.main--img img{
+    width: 100%;
+    border-radius: 12px;
+    margin-top: 4rem;
+    
+    /* background-image: linear-gradient(rgba(0,0,0,4.4),rgba(0,0,0,4.4),url(myimg.jpg)); */
+    /* color: red; */
+}
+
+.what--i--know {
+    margin-top: 5rem;
+    background: #c5eff6;
+    border: 2px solid #555;
+    border-radius: 12px;
+    padding: 2rem 4.8rem;
+}
+
+.content--parg {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 1rem;
+    text-align: center;
+}
+
+.js {
+    justify-self: center;
+}
+
+.content--parg p {
+    background: #f9fb97;
+    border-radius: 12px;
+    font-size: 2rem;
+    font-weight: bold;
+    width: fit-content;
+    padding: .2rem 2rem;
+    box-shadow: -4px 4px ;
+    border:  2px solid #333;
+}
+
+.btn {
+    background: none;
+    border: none;
+    font-family: cursive;
+}
+
+.main--btn {
+    background: #e24a85;
+    color: white;
+    padding: 1rem 2rem;
+    border:  2px solid #333;
+    box-shadow: -4px 4px  #000;
+    border-radius: 4px;
+    margin-top: 2.5rem;
+    font-size: 2rem;
+}
+
+
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 /
+64 / 80 / 96 / 128
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 /
+30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+-->
+
+
+
+/* nav: #c5eff6 */
+
